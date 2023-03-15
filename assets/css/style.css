@@ -40,6 +40,17 @@ h1{
     font-size:6rem;
     font-weight: 700;
     color: #fff;
+    margin-top: -4.57rem;
+    margin-left: -0.3rem;
+}
+
+#titulo_part1{
+    font-size: 11.7rem;
+}
+
+#titulo_part2{
+    font-size: 10.2rem;
+    margin-top: -7.5rem;
 }
 
 h2{
@@ -58,6 +69,7 @@ span{
     font-family: 'Montserrat';
     font-size: 4.5rem;
     color: var(--color_defaut);
+    transform: rotate(-90deg);
 }
 
 .botao1{
