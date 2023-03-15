@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -8,39 +10,57 @@
 
 :root{
     font-size: 62.5%;
+    --fonte_defaut: 'Montserrat';
+    --font_heading: 'Poppins';
+    --color_defaut: #FFFFFF;
+    --color_secondary: #2B2B2B;
 }
 
 header{
+
+    display: flex; /* Torna todos os filhos do header flexiveis*/
+    flex-direction: column;
+    align-items: flex-start; /* estaremos alinhando os itens à esquerda (start), permitindo que o botao saiba mais nao fique esticado*/
+    gap: 2rem; /* espaçamento entre linhas*/
+
     height: 100vh;
     position: relative;
     bottom: 0rem;
     left: 0;
     background-image: url('../images/altumcode-dMUt0X3f59Q-unsplash.jpg');
     background-size: cover;
-    color: #FFF;
+    color: var(--color_defaut);
 
     padding-top: 0rem;
     padding-left: 0rem;
 }
 
 h1{
-    font-family: 'Poppins';
+    font-family: var(--font_heading);
     font-size:6rem;
     font-weight: 700;
     color: #fff;
 }
 
+h2{
+    font-family: var(--fonte_defaut);
+    font-weight: 600;
+    font-size: 3.72rem;
+    line-height: 45px;
+}
+
+p{
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+}
+
 span{
     font-family: 'Montserrat';
     font-size: 4.5rem;
+    color: var(--color_defaut);
 }
 
 .botao1{
-    position: absolute;
-    width:  31.6rem;
-    height: 6.1rem;
-    left:   20.6rem;
-    top:    22.8rem;
 
     font-family: 'Montserrat';
     font-style:  normal;
@@ -59,6 +79,25 @@ span{
     text-decoration: none;
 }
 
+section{
+    display: flex;
+    padding: 10.8rem; /* posição à esquerda*/
+}
+
+.avatar{
+    border-radius: 50%;
+}
+
+#texto-apresentacao{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+}
+
+/*
 img{
     border-radius: 100%;
     width: 41.4rem;
@@ -115,4 +154,4 @@ p{
     border-radius: 5px;
     
     text-decoration: none;
-}
+}*/
