@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+header{
+    height: 100vh;
+    position: relative;
+    bottom: 0rem;
+    left: 0;
+    background-image: url('../images/altumcode-dMUt0X3f59Q-unsplash.jpg');
+    background-size: cover;
+    color: #FFF;
+
+    padding-top: 0rem;
+    padding-left: 0rem;
+}
+
+h1{
+    font-family: 'Poppins';
+    font-size:6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+span{
+    font-family: 'Montserrat';
+    font-size: 4.5rem;
+}
+
+.botao1{
+    position: absolute;
+    width:  31.6rem;
+    height: 6.1rem;
+    left:   20.6rem;
+    top:    22.8rem;
+
+    font-family: 'Montserrat';
+    font-style:  normal;
+    font-weight: 400;
+    font-size:   3rem;
+    line-height: 3.4rem;
+    
+    padding-top:  1.2rem;
+    padding-left: 7.6rem;
+
+    color: #FFF;
+
+    background: linear-gradient(90deg, #2193B0 -59.18%, #6DD5ED 100%);
+    border-radius: 0.5rem;
+    
+    text-decoration: none;
+}
+
+img{
+    border-radius: 100%;
+    width: 41.4rem;
+    height: 41.4rem;
+}
+
+section {
+    height: 100vh;
+    padding-top:  15.9rem;
+    padding-left: 10.8rem;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 3.72rem;
+    font-weight: 400;
+    color: #000;
+
+    position: absolute;
+    left:   54.2rem;
+    top:    102rem;
+}
+
+p{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+
+    position: absolute;
+    left:   54.2rem;
+    top:    113rem;
+}
+
+.botao2 {
+    position: absolute;
+    width:  30.5rem;
+    height: 5.4rem;
+    left:   54.2rem;
+    top:    119.8rem;
+
+    font-family: 'Montserrat';
+    font-style:  normal;
+    font-weight: 400;
+    font-size:   2.5rem;
+    line-height: 3rem;
+    
+    padding-top: 1.2rem;
+    padding-left: 3.75rem;
+
+    color: #FFF;
+
+    background: linear-gradient(90deg, #2193B0 -59.18%, #6DD5ED 100%);
+    border-radius: 5px;
+    
+    text-decoration: none;
+}
