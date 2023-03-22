@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     font-size: 62.5%;
     --fonte_defaut: 'Montserrat';
@@ -98,6 +102,19 @@ section{
 
 .avatar{
     border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: zoom 5s;
+}
+
+@keyframes zoom {
+    0%{
+        transform:scale(1.3);
+    }
+    100%{
+        transform:scale(1);
+    }
+    
 }
 
 #texto-apresentacao{
@@ -107,6 +124,46 @@ section{
     align-items: flex-start;
     gap: 2rem;
 
+}
+
+#secao-projetos{
+    background-color: #1c1c1c;
+    color: var(--color_defaut);
+}
+
+#secao-projetos ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover .card-image{
+    opacity: 20%;
+}
+.card:hover .card-info{
+    opacity: 1;
+    bottom: 20%;
+}
+
+.card-image img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .45s ease-in-out, bottom .5s;
 }
 
 /*
