@@ -86,7 +86,7 @@ h1{
 }
 
 #titulo_part1{
-    font-size: 11.7rem;
+    font-size: clamp(3rem, 5vw, 11.7rem);
 }
 
 #titulo_part2{
@@ -239,4 +239,18 @@ input[type=number]{
     padding: .5rem;
     background-color: var(--color_secondary);
     color: var(--color_defaut);
+}
+
+@media(max-width: 900px){
+    #secao-projetos ul{
+        flex-direction: column;
+
+    }
+    .large-only{
+        display: none;
+    }
+
+    #secao-orcamento form{
+        grid-template-columns: 1fr;
+    }
 }
